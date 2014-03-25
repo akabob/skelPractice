@@ -1,0 +1,97 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>skelJS Example</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
+		<!--[if lte IE 8]><script src="html5shiv.js" type="text/javascript"></script><![endif]-->
+        <script src="js/converter.js"> </script>
+        <script src="js/bridge.js"> </script>
+        <script src="js/sk1.js"> </script>
+		<script src="skel.min.js"> </script>
+       
+  
+        <script>
+
+            function calculate() {
+
+                document.getElementById("ounceweight").value = Converter.convertFromImperialToMetric(100);
+
+                
+            }
+
+
+
+        </script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Header -->
+				<div id="header" class="row">
+					<div class="4u">
+						<h1>Example</h1>
+					</div>
+					<nav id="nav" class="8u">
+						<a href="#">Home</a>
+						<a href="#">About Me</a>
+						<a href="#">Blog</a>
+						<a href="#">Contact</a>
+					</nav>
+				</div>
+			<!-- Hero -->
+				<section id="hero">
+					<h1>Welcome to my converter</h1>
+					
+				</section>
+			<!-- Features -->
+				<div class="row">
+					<section class="4u">
+						<h2>Imperial Weight in ounces </h2>
+                        <input id="ounceweight" type="text" />
+						
+					</section>
+					<section class="4u">
+						<h2>Imperial Weight in Kilograms </h2>
+                        <input id="kiloweight" type="number" />
+					</section>
+					<section class="4u">
+						<h2>Kilograms to Imperial Weight </h2>
+                        <input id="Number1" type="number" />
+					</section>
+				</div>
+			<!-- Main -->
+
+            <div class="row">
+  <div class="8u">Something should go here</div>
+  <div class="4u"><input type = "button" value = "Calculate" onclick="convertFromItoM('ans', '100')"></div>
+</div>
+            <div class="12u">8u</div>
+ <!-- <div class="4u"><input type = "button" value = "U12 Calculate" onclick="calculate('ans', 'ounceweight', 'kiloweight')"></div> -->
+</div>
+
+
+            <div class="row">
+                <div>
+            <section class ="8u">
+                
+				<!-- <input type = "button" value = "Calculate" onclick="calculate('ans', 'ounceweight', 'kiloweight')"> -->
+                    
+
+            </section>
+                </div>
+					<!-- Sidebar -->
+						<section class="4u">
+							<h2>Heading</h2>
+							<p>This is my first web site hosted on Azure.
+							
+							</p>
+						</section>
+				</div>
+			<!-- Footer -->
+				<div id="footer">
+					&copy; Example. All rights reserved.
+				</div>
+		</div>
+	</body>
+</html>
+
